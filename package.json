@@ -1,0 +1,17 @@
+{
+  "name": "bank-alafkar",
+  "version": "2.0.0",
+  "description": "بنك الأفكار - نسخة Vercel + Supabase",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,10 @@
+بيانات دخول الأدمن الافتراضية
+اسم المستخدم: admin
+كلمة المرور: 123456
+
+مهم: لا تفتح admin.html بالنقر المزدوج ولا عبر Live Server منفصل.
+شغّل المشروع من Terminal داخل المجلد:
+npm install
+npm start
+ثم افتح:
+http://localhost:3000/admin.html
