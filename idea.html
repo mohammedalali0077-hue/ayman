@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0734a2" />
+  <title>شاركنا فكرتك | بنك الأفكار</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="idea-page">
+  <header class="home-topbar">
+    <div class="home-topbar-inner">
+      <div class="home-user">
+        <span class="home-user-dot">●</span>
+        <span id="employeeWelcome">مرحباً بك</span>
+      </div>
+      <div class="home-actions">
+        <button class="home-dashboard-btn" id="myIdeasBtn" type="button">أفكاري</button>
+        <button class="home-logout" id="backHomeBtn" type="button">العودة للرئيسية</button>
+        <button class="home-logout" id="logoutBtn" type="button">تسجيل الخروج</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="idea-page-main">
+    <section class="idea-page-card">
+      <div class="idea-page-brand">
+        <img src="assets/ayman-logo.png" alt="شعار مكتبة أيمن" class="idea-page-logo" />
+        <span class="idea-kicker">بنك الأفكار</span>
+        <h1>شاركنا فكرتك</h1>
+        <p>وضح التحدي، والحل المقترح، والأثر المتوقع حتى تتمكن لجنة التقييم من دراسة الفكرة بشكل واضح.</p>
+      </div>
+
+      <div class="idea-form-grid">
+        <div class="field-full">
+          <label for="category">مجال المقترح *</label>
+          <select id="category">
+            <option value="">اختر المجال</option>
+            <option>التحول الرقمي والأتمتة</option>
+            <option>التطوير الإجرائي والإداري</option>
+            <option>تجربة العميل</option>
+            <option>بيئة العمل والثقافة المؤسسية</option>
+          </select>
+        </div>
+        <div class="field-full">
+          <label for="ideaTitle">عنوان الفكرة *</label>
+          <input id="ideaTitle" type="text" maxlength="120" placeholder="عنوان مختصر وواضح للفكرة" />
+        </div>
+        <div>
+          <label for="challenge">ما التحدي أو المشكلة الحالية؟ *</label>
+          <textarea id="challenge" rows="5" placeholder="اشرح المشكلة التي تريد معالجتها..."></textarea>
+        </div>
+        <div>
+          <label for="solution">ما الحل المقترح؟ *</label>
+          <textarea id="solution" rows="5" placeholder="اشرح فكرتك والحل المقترح..."></textarea>
+        </div>
+        <div class="field-full">
+          <label for="expectedImpact">ما الأثر المتوقع؟ *</label>
+          <textarea id="expectedImpact" rows="4" placeholder="مثال: تقليل الوقت، خفض التكاليف، تحسين الخدمة، رفع الإنتاجية..."></textarea>
+        </div>
+        <div class="field-full">
+          <label for="ideaFile">إرفاق ملف (اختياري)</label>
+          <input id="ideaFile" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.zip,.rar,.jpg,.jpeg,.png" />
+          <small class="file-help">يمكن إرفاق ملف توضيحي للفكرة بحد أقصى 10 ميغابايت.</small>
+        </div>
+      </div>
+
+      <button id="sendIdeaBtn" class="submit-idea-btn" type="button">إرسال الفكرة إلى لجنة التقييم</button>
+      <p id="ideaMessage" class="form-message"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>مكتبة أيمن © 2026 جميع الحقوق محفوظة</span><span>معاً .. نصنع فرقاً أفضل</span></footer>
+  <script src="idea.js"></script>
+</body>
+</html>
